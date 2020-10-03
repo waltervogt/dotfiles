@@ -1,0 +1,2 @@
+#Youtube-dl configurations
+-o ~/Downloads/%(title)s-%(id)s.%(ext)s

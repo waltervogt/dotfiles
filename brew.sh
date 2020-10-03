@@ -53,49 +53,140 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install netpbm
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+# brew install aircrack-ng
+# brew install bfg
+# brew install binutils
+# brew install binwalk
+# brew install cifer
+# brew install dex2jar
+# brew install dns2tcp
+# brew install fcrackzip
+# brew install foremost
+# brew install hashpump
+# brew install hydra
+# brew install john
+# brew install knock
+# brew install netpbm
+# brew install nmap
+# brew install pngcheck
+# brew install socat
+# brew install sqlmap
+# brew install tcpflow
+# brew install tcpreplay
+# brew install tcptrace
+# brew install ucspi-tcp # `tcpserver` etc.
+# brew install xpdf
+# brew install xz
 
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
-brew install git
-brew install git-lfs
-brew install gs
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
-brew install p7zip
-brew install pigz
-brew install pv
-brew install rename
-brew install rlwrap
-brew install ssh-copy-id
+brew install ffmpeg
+brew install fortune
+# brew install git
+# brew install git-lfs
+# brew install gs
+# brew install imagemagick --with-webp
+# brew install lua
+# brew install lynx
+brew install neovim
+brew install node
+# brew install p7zip
+# brew install pigz
+# brew install pv
+brew install python
+# brew install rename
+# brew install rlwrap
+# brew install ssh-copy-id
 brew install tree
-brew install vbindiff
-brew install zopfli
+# brew install vbindiff
+brew install youtube-dl
+# brew install zopfli
+
+# Install Casks
+cask=(
+    1password
+    1password-cli #https://support.1password.com/command-line-getting-started/
+    adobe-creative-cloud
+    #alacritty
+    alfred
+    #balenaetcher
+    banktivity
+    bbedit
+    #bitbar
+    #calibre
+    carbon-copy-cloner
+    google-chrome
+    #day-o
+    #dozer
+    #dropbox
+    #edex-ui
+    #fantastical
+    firefox
+    handbrake
+    istat-menus
+    iterm2
+    #java
+    #keka
+    keyboard-maestro
+    #keycastr
+    #lastpass
+    #macmediakeyforwarder
+    #meteorologist
+    microsoft-office
+    #minecraft
+    #nvalt
+    #obs
+    onedrive
+    #plex-media-player
+    #pocket-casts
+    quickbooks
+    #qutebrowser
+    rectangle
+    sequel-pro
+    sublime-text
+    sublime-merge
+    sonos-s1-controller
+    spectacle
+    #spotify
+    #switchresx
+    #tor-browser
+    #typora
+    #virtualbox
+    visual-studio-code
+    #vlc
+) #GUI apps that install with cask
+
+brew cask install ${cask[@]} #Casks Installer
+
+# Install Mac App Store Applications
+brew install mas
+brew tap mas-cli/tap
+mas=(
+    1142578772 #OmniOutliner
+    409183694 #Keynote 
+    823766827 #OneDrive
+    562184107 #LanScan Pro
+    682658836 #GarageBand
+    425424353 #The Unarchiver
+    409789998 #Twitter
+    883878097 #Server
+    1019272813 #Acorn
+    485812721 #TweetDeck
+    447521961 #XChat Azure
+    1153157709 #Speedtest
+    409203825 #Numbers
+    497799835 #Xcode
+    409201541 #Pages
+    1346203938 #OmniFocus
+    832917885 #com.craigmullaney.TWiT-tv
+    406825478 #Telephone
+    408981434 #iMovie
+    470158793 #Keka
+) #Mac App Store apps I install
+mas install ${mas[@]} #Mac App Store Installer
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+ln -s ~/Projects/dotfiles/.youtube-dl/config ~/.config/youtube-dl/config
