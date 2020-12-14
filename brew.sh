@@ -47,10 +47,10 @@ brew install php
 brew install gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
+#brew tap bramstein/webfonttools
+#brew install sfnt2woff
+#brew install sfnt2woff-zopfli
+#brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
@@ -105,6 +105,7 @@ brew install youtube-dl
 
 # Install Casks
 cask=(
+		drobo-dashboard
     1password
     1password-cli #https://support.1password.com/command-line-getting-started/
     adobe-creative-cloud
@@ -140,7 +141,7 @@ cask=(
     onedrive
     #plex-media-player
     #pocket-casts
-    quickbooks
+    #quickbooks
     #qutebrowser
     rectangle
     sequel-pro
