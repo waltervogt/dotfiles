@@ -103,13 +103,17 @@ brew install tree
 brew install youtube-dl
 # brew install zopfli
 
+# Install Homebrew's Driver Cask
+brew tap homebrew/cask-drivers
+brew tap homebrew/cask-versions
+
 # Install Casks
 cask=(
-		drobo-dashboard
+	drobo-dashboard	
     1password
     1password-cli #https://support.1password.com/command-line-getting-started/
     adobe-creative-cloud
-    #alacritty
+    #alacritty #https://github.com/alacritty/alacritty
     alfred
     #balenaetcher
     banktivity
@@ -138,7 +142,6 @@ cask=(
     #minecraft
     #nvalt
     #obs
-    onedrive
     #plex-media-player
     #pocket-casts
     #quickbooks
@@ -158,7 +161,7 @@ cask=(
     #vlc
 ) #GUI apps that install with cask
 
-brew cask install ${cask[@]} #Casks Installer
+brew install ${cask[@]} --cask #Casks Installer
 
 # Install Mac App Store Applications
 brew install mas
