@@ -193,4 +193,5 @@ mas install ${mas[@]} #Mac App Store Installer
 # Remove outdated versions from the cellar.
 brew cleanup
 
+mkdir -p ~/.config/youtube-dl
 ln -s ~/Projects/dotfiles/.youtube-dl/config ~/.config/youtube-dl/config
