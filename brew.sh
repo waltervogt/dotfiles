@@ -109,7 +109,7 @@ brew tap homebrew/cask-versions
 
 # Install Casks
 cask=(
-	drobo-dashboard	
+	  drobo-dashboard	
     1password
     1password-cli #https://support.1password.com/command-line-getting-started/
     adobe-creative-cloud
