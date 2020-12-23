@@ -1,1 +1,1 @@
-source ~/.zsh_profile;
+source ~/dotfiles/.zsh_profile;
