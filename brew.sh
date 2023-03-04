@@ -109,7 +109,7 @@ brew tap homebrew/cask-versions
 
 # Install Casks
 cask=(
-	  drobo-dashboard	
+	  drobo-dashboard
     1password
     1password-cli #https://support.1password.com/command-line-getting-started/
     adobe-creative-cloud
@@ -168,14 +168,12 @@ brew install mas
 brew tap mas-cli/tap
 mas=(
     1142578772 #OmniOutliner
-    409183694 #Keynote 
+    409183694 #Keynote
     823766827 #OneDrive
-    562184107 #LanScan Pro
+    472226235 #LanScan
     682658836 #GarageBand
     425424353 #The Unarchiver
-    409789998 #Twitter
     883878097 #Server
-    1019272813 #Acorn
     485812721 #TweetDeck
     447521961 #XChat Azure
     1153157709 #Speedtest
