@@ -109,18 +109,20 @@ brew tap homebrew/cask-versions
 
 # Install Casks
 cask=(
-	  drobo-dashboard
+	drobo-dashboard
+	keyboard-maestro
     1password
     1password-cli #https://support.1password.com/command-line-getting-started/
     adobe-creative-cloud
     #alacritty #https://github.com/alacritty/alacritty
     alfred
-    #balenaetcher
+    balenaetcher
     banktivity
     bbedit
     #bitbar
     #calibre
     carbon-copy-cloner
+    cakebrew
     google-chrome
     #day-o
     #dozer
@@ -135,23 +137,21 @@ cask=(
     #keka
     keyboard-maestro
     #keycastr
-    #lastpass
     #macmediakeyforwarder
     #meteorologist
     microsoft-office
     #minecraft
     #nvalt
-    #obs
+    onyx
     #plex-media-player
     #pocket-casts
     #quickbooks
     #qutebrowser
     rectangle
-    sequel-pro
+    sequel-ace
     sublime-text
     sublime-merge
     sonos-s1-controller
-    spectacle
     #spotify
     #switchresx
     #tor-browser
@@ -191,5 +191,5 @@ mas install ${mas[@]} #Mac App Store Installer
 # Remove outdated versions from the cellar.
 brew cleanup
 
-mkdir -p ~/.config/youtube-dl
-ln -s ~/Projects/dotfiles/.youtube-dl/config ~/.config/youtube-dl/config
+mkdir -p ~/.config/yt-dlp
+ln -s ~/dotfiles/yt-dlp/config ~/.config/yt-dlp/config
